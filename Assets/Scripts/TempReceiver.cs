@@ -7,9 +7,11 @@ public class TempReceiver : MonoBehaviour, INotificationReceiver
     {
         if (notification is TempMarker tempMarkers)
         {
-            Debug.Log(notification);
-            PlayableDirector playableDirector = GetComponent<PlayableDirector>();
+            Debug.Log("Paused");
+            TimelineManager timelineManager = GetComponent<TimelineManager>();
+            PlayableDirector playableDirector = timelineManager.playableDirector;
             playableDirector.Pause();
+            timelineManager.waitForGrab();
         }
             
     }

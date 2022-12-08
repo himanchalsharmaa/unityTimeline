@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Timeline;
 using UnityEngine.Playables;
 
-[TrackBindingType(typeof(PlayableDirector))]
+[TrackBindingType(typeof(TimelineManager))]
 [TrackClipType(typeof(CustomClip))]
 public class CustomTrack : TrackAsset
 {

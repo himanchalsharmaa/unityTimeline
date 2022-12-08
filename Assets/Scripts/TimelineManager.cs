@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
+using Microsoft.MixedReality.Toolkit.UI;
+using Microsoft.MixedReality.Toolkit.Input;
 
 public class TimelineManager : MonoBehaviour
 {
-    internal PlayableDirector playableDirector;
-    void Start()
+    public PlayableDirector playableDirector;
+    public GameObject grabbable;
+    private bool grabbed = false;
+    void Awake()
     {
-         playableDirector = GetComponent<PlayableDirector>();
+        
         if(playableDirector == null)
         {
             Debug.Log("NULL HERE");
@@ -17,6 +21,11 @@ public class TimelineManager : MonoBehaviour
         else { Debug.Log("FOUND IT"); }
     }
 
+    public void waitForGrab()
+    {
+        grabbable.GetComponent<ObjectManipulator>().OnManipulationStarted.AddListener((e)=> playableDirector.Play());
+        
+    }
 
-    
-}
+
+    }
