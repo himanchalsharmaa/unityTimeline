@@ -57,6 +57,18 @@ MonoBehaviour:
   m_Clips: []
   m_Markers:
     m_Objects: []
+--- !u!114 &-5532632506787638291
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
+  m_Name: ActivationPlayableAsset(Clone)(Clone)
+  m_EditorClassIdentifier: 
 --- !u!114 &-4092409132691523566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,11 +81,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f196ab06e7e4d44408db6d12f3e596b8, type: 3}
   m_Name: Temp Marker
   m_EditorClassIdentifier: 
-  m_Time: 2.9833333333333334
+  m_Time: 2.966666666666667
   title: 
   color: {r: 1, g: 0, b: 0, a: 1}
   description: 
   showLineOverlay: 0
+  toManipulatePath: 2,3,0,
   retroactive: 0
   emitOnce: 0
 --- !u!114 &-2576516586079732005
@@ -88,6 +101,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
   m_Name: ActivationPlayableAsset(Clone)
   m_EditorClassIdentifier: 
+--- !u!114 &-2275729764910904936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f196ab06e7e4d44408db6d12f3e596b8, type: 3}
+  m_Name: Temp Marker
+  m_EditorClassIdentifier: 
+  m_Time: 5.566666666666666
+  title: '""'
+  color: {r: 1, g: 0, b: 0, a: 1}
+  description: 
+  showLineOverlay: 0
+  toManipulatePath: 1,0,
+  retroactive: 0
+  emitOnce: 0
 --- !u!74 &-1275698616237518791
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -313,10 +346,79 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 3
+    m_Start: 2.9833333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 6782059228866980511}
-    m_Duration: 5
+    m_Duration: 2.5999999999999996
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -960328734014956645}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Active
+  - m_Version: 1
+    m_Start: 7.4
+    m_ClipIn: 0
+    m_Asset: {fileID: -5532632506787638291}
+    m_Duration: 2.5999999999999996
     m_TimeScale: 1
     m_ParentTrack: {fileID: -960328734014956645}
     m_EaseInDuration: 0
@@ -459,6 +561,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
   m_Name: ActivationPlayableAsset
   m_EditorClassIdentifier: 
+--- !u!114 &2455456814063638834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f196ab06e7e4d44408db6d12f3e596b8, type: 3}
+  m_Name: Temp Marker
+  m_EditorClassIdentifier: 
+  m_Time: 7
+  title: 
+  color: {r: 1, g: 0, b: 0, a: 1}
+  description: 
+  showLineOverlay: 0
+  toManipulatePath: 2,3,2,
+  retroactive: 0
+  emitOnce: 0
 --- !u!74 &2612038634117868991
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -1336,6 +1458,8 @@ MonoBehaviour:
   m_Markers:
     m_Objects:
     - {fileID: -4092409132691523566}
+    - {fileID: -2275729764910904936}
+    - {fileID: 2455456814063638834}
 --- !u!114 &8988433829887943317
 MonoBehaviour:
   m_ObjectHideFlags: 1

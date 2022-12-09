@@ -9,7 +9,7 @@ using Microsoft.MixedReality.Toolkit.Input;
 public class TimelineManager : MonoBehaviour
 {
     public PlayableDirector playableDirector;
-    public GameObject grabbable;
+    public GameObject manipulatorRoot;
     private bool grabbed = false;
     void Awake()
     {
@@ -21,10 +21,9 @@ public class TimelineManager : MonoBehaviour
         else { Debug.Log("FOUND IT"); }
     }
 
-    public void waitForGrab()
+    public void waitForGrab(GameObject toManipulate)
     {
-        grabbable.GetComponent<ObjectManipulator>().OnManipulationStarted.AddListener((e)=> playableDirector.Play());
-        
+        toManipulate.GetComponent<ObjectManipulator>().OnManipulationStarted.AddListener((e)=> playableDirector.Play());
     }
 
 
